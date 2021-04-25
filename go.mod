@@ -1,4 +1,4 @@
-module github.com/romana/ipset
+module github.com/ThomasAdam/ipset
 
 go 1.12
 

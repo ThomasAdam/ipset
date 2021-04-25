@@ -94,7 +94,7 @@ func NewHandle(options ...OptFunc) (*Handle, error) {
 	if h.handleInteractive {
 		h.stdin, err = h.cmd.StdinPipe()
 		h.stderr, err = h.cmd.StderrPipe()
-		h.stdout, err = h.cmd.StdoutPipe()
+		h.stdout, err = nil, nil
 	}
 	rlog.Tracef(3, "creating handle for %s %s, interactive=%t", h.ipsetBin, h.args, h.handleInteractive)
 
